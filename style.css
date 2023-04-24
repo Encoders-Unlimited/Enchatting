@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Segoe UI', sans-serif;
+  src: url('fonts/Segoe\ UI.ttf') format('ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1c1c1c;
+}
+
+.right-head{
+  position: relative;
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 31px 10px 24px;
+  background: #fff;
+  width: 1081px;
+  height: 60%;
+}
+
+.user{
+  display: grid;
+  position: relative;
+  grid-template-columns: 44px 128px;
+  columns: 2;
+  width: 200px;
+}
+
+.user-info{
+  position: absolute;
+  left: 60px;
+}
+
+.avatar{
+  background-image: 
+  linear-gradient(#FF2424, #CC4242, #B64F4F, #826E6E);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.avatar .initials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  height: 42px;
+  color: #fff;
+}
+
+.nickname{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status{
+  position: relative;
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.6;
+  margin: 2px 0px 0px 13px;
+}
+
+.status::before{
+  position: absolute;
+  top: 3.5px;
+  left: -12px;
+  content: '';
+  background-color: #00ff44;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.search{
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  align-self: center;
+}
+.search img{
+  width: 25px;
+  height: 25px;
+}
