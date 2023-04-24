@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Segoe UI' sans-serif;
+  src: url(fonts/Segoe\ UI.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #1C1C1C;
+}
+
+.left-head{
+  background-color: #fff;
+  padding: 16px 24px 16px 24px;
+  display: table;
+  height: 60px;
+  width: 360px;
+}
+
+.menu-btn{
+  margin-right: 43px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-btn svg{
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  color: rgb(112, 112, 112);
+  width: 19px;
+  height: 12px;
+}
+
+.menu-btn svg:hover{
+  opacity: 0.8;
+}
+
+.menu-btn svg:active{
+  opacity: 1;
+}
+
+.search-chat{
+  display: table-cell;
+}
+
+.search-chat input{
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  height: 28px;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 0px 6px 15px;
+  background-color: rgba(112, 112, 112, 0.3);
+  color: rgba(112, 112, 112, 0.6);
+  width: 269px;
+}
+
