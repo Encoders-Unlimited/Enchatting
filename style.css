@@ -159,3 +159,68 @@ body{
   left: 360px;
   top: 60px;
 }
+
+.menu {
+  position: absolute;
+  top: -104px;
+  left: -90px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  position: absolute;
+  left: -4px;
+  list-style: none;
+  transform-origin: 100px;
+  transition: 0.5s;
+  visibility: hidden;
+  transform: rotate(0deg) translateX(90px);
+}
+
+.menu li.usable a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(calc(240deg / -6 * var(--i)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: #111;
+  transition: 0.25s;
+  font-size: 1em;
+}
+
+.menu li.usable a:hover{
+  color: #ff1252;
+}
+
+.menu.active li {
+  visibility: visible;
+  transform: rotate(calc(360deg / 9 * var(--i)));
+}
+
+.toggle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0 ,0, 0, 0.15);
+  font-size: 1.2em;
+  transition: transform 0.5s;
+}
+
+.menu.active .toggle {
+  transform: rotate(315deg);
+}
